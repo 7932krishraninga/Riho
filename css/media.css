@@ -1,0 +1,308 @@
+/* xl */
+/* @media (max-width:1399px){
+    .col-xl-6{
+        width: 50%;
+    }
+} */
+/* lg */
+/* @media (max-width:1199px){
+    .col-lg-4{
+        width: 33.33%;
+    }
+} */
+/* md */
+/* @media (max-width:991px){
+    .col-md-3{
+        width: 25%;
+    }
+} */
+/* sm */
+/* @media (max-width:767px){
+    .col-sm-6{
+        width: 50%;
+    }
+} */
+/* xs */
+/* @media (max-width:575px){
+    .col-xs-12{
+        width: 100%;
+    }
+} */
+
+
+/* xxl */
+@media (min-width:991px){
+    .menu-btn,.chevron-left{
+        display: none;
+    }
+}
+/* xxl */
+/* xl */
+@media (max-width:1399px){
+    .col-xl-6{
+        width: 50%;
+    }
+    .col-xl-12{
+        width: 100%;
+    }
+    .col-xl-5{
+        width: 41.65%;
+    }
+    .col-xl-7{
+        width: 58.31%;
+    }
+    .user-text span,
+    .user-text p {
+        display: none;
+    }
+    #bar-chart,#chart2{
+        margin-left: -25px;
+    }
+
+}
+
+
+/* lg */
+@media (max-width:1199px) {
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .user-text span,
+    .user-text p {
+        display: none;
+    }
+
+    .header-input input {
+        width: 200px;
+    }
+
+    .header-hand img {
+        width: 20px;
+    }
+
+    .card-m3 img {
+        width: 100%;
+    }
+
+    .img-card h4 {
+        text-align: center;
+    }
+}
+
+
+
+/* md */
+@media (max-width:991px) {
+    .col-md-3{
+        width: 25%;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+    .side-bar {
+        display: none;
+    }
+
+    .pages-wrapper-body {
+        margin-left: 0;
+    }
+    .grid{
+        display: none;
+    }
+    .copyright {
+        margin-left: 0;
+    }
+
+    .header-content,
+    .header-input input,
+    .user-text,
+    .card-title-sibling span {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .header-input form span {
+        width: 45px;
+        height: 45px;
+        background-color: #22242B;
+        display: inline-block;
+        border-radius: 50%;
+
+    }
+
+    .header-input form span svg {
+        border-right: 0px;
+    }
+
+    .user {
+        border-left: 0;
+        padding: 0;
+    }
+
+    .header-main {
+        justify-content: space-around;
+    }
+
+    .loading {
+        overflow: visible;
+    }
+
+    .dropdown {
+        left: -100%;
+    }
+
+    .dropdown2 {
+        left: -450%;
+    }
+
+    .pages-body-title {
+        padding: 0 10px 15px 10px;
+    }
+
+    .pages-body-title h4,
+    .card-title h4 {
+        font-size: 17px;
+    }
+
+    .title-icon {
+        flex-direction: column;
+    }
+
+    .pages-body-main .card {
+        padding: 10px;
+    }
+
+    .img-card {
+        height: 416px !important;
+    }
+
+    .img-card h4 {
+        text-align: center;
+    }
+
+    .offer-content {
+        padding-top: 10px;
+    }
+}
+/* xs */
+@media (max-width:575px) {
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-6,
+    .col-8,
+    .col-9,
+    .col-7,
+    .col-5,
+    .col-12 {
+        padding: 0;
+    }
+
+    .side-bar {
+        display: none;
+    }
+    .pages-wrapper-body {
+        margin-left: 0;
+    }
+
+    .copyright {
+        margin-left: 0;
+    }
+
+    .header-content,
+    .header-input input,
+    .user-text,
+    .card-title-sibling span {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .header-input form span {
+        width: 45px;
+        height: 45px;
+        background-color: #22242B;
+        display: inline-block;
+        border-radius: 50%;
+
+    }
+
+    .header-input form span svg {
+        border-right: 0px;
+    }
+
+    .user {
+        border-left: 0;
+        padding: 0;
+    }
+
+    .header-main {
+        justify-content: space-around;
+    }
+
+    .loading {
+        overflow: visible;
+    }
+
+    .dropdown {
+        left: -100%;
+    }
+
+    .dropdown2 {
+        left: -450%;
+    }
+
+    .pages-body-title {
+        padding: 0 10px 15px 10px;
+    }
+
+    .pages-body-title h4,
+    .card-title h4 {
+        font-size: 17px;
+    }
+
+    .title-icon {
+        flex-direction: column;
+    }
+
+    .pages-body-main .card {
+        padding: 10px;
+    }
+
+    .img-card {
+        height: 300px !important;
+    }
+
+    .img-card h4 {
+        text-align: center;
+    }
+
+    .offer-content {
+        padding-top: 10px;
+    }
+}

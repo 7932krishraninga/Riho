@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jai Ganesh admin pannel</title>
+
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="icon" href="./images/favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.2/feather.min.js"
+        integrity="sha512-zMm7+ZQ8AZr1r3W8Z8lDATkH05QG5Gm2xc6MlsCdBz9l6oE8Y7IXByMgSm/rdRQrhuHt99HAYfMljBOEZ68q5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <link rel="stylesheet" href="https://fullcalendar.io/js/fullcalendar-3.4.0/fullcalendar.min.css"> -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body id="text" class="loading">
+    <div class="loader d-flex justify-center align-center">
+        <div class="body-loader">
+            <div class="s1"></div>
+            <div class="s1"></div>
+            <div class="s1"></div>
+            <div class="s1"></div>
+            <div class="s1"></div>
+            <div class="s1"></div>
+            <div class="s1"></div>
+            <div class="s1"></div>
+            <div class="s1"></div>
+        </div>
+    </div>
+    <div class="pages-wrapper">
+        <div class="side-bar">
+            <div class="side-bar-img d-flex justify-between align-center">
+                <img src="./images/logo.png" alt="" class="img1" />
+                <img src="./images/logo-icon2.png" alt="" class="img2">
+                <div class="grid-icon">
+                    <i data-feather="grid" class="grid"></i>
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <div class="sidebar-info">
+                    <ul>
+                        <li class="sidebar-main-title">
+                            <h6>GENERAL</h6>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="home"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Dashboard</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Default</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Ecommerce</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Project</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="grid"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Widgets</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>General</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Chart</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="layout"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Page Layout</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Boxed</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>RTL</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Dark Layout</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Hide Nav Scroll</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-main-title">
+                            <h6>APPLICATIONS</h6>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="alert-circle"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Project</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Project List</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Create New</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="file-text"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>File Manager</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="box"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Kanban Board</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="shopping-bag"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Ecommerce</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Boxed</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>RTL</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Dark Layout</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Hide Nav Scroll</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot5">
+                                    <span>Boxed</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot6">
+                                    <span>RTL</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot7">
+                                    <span>Dark Layout</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot8">
+                                    <span>Hide Nav Scroll</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot9">
+                                    <span>Boxed</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot10">
+                                    <span>RTL</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot11">
+                                    <span>Dark Layout</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot12">
+                                    <span>Hide Nav Scroll</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="send"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Letter Box</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="message-circle"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Chat</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Private Chat</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Group Chat</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="users"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Users</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Users Profile</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Users Edit</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Users Cards</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="heart"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Bookmarks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="phone-call"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Contacts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="check-square"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Tasks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="calendar"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="camera"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Socila App</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="edit-3"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>To-Do</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="search"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Search Result</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-main-title">
+                            <h6>FORMS & TABLE</h6>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="plus-square"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Forms</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Forms Controls</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Forms Widgets</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Form Layout</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="edit"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Tables</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Bootstrap Tables</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Data Tables</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Ex. Data Tables</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Js Grid Table</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-main-title">
+                            <h6>COMPONENTS</h6>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="folder-minus"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>ui Kits</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Typography</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Avatars</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Helper Classes</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Grid</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot5">
+                                    <span>Tag & Pills</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot6">
+                                    <span>RProgress</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot7">
+                                    <span>Modal</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot8">
+                                    <span>Alert</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot9">
+                                    <span>Popover</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot10">
+                                    <span>Tooltip</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot11">
+                                    <span>Dropdown</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot12">
+                                    <span>Accordion</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot13">
+                                    <span>Tabs</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot14">
+                                    <span>Lists</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="briefcase"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Bonus Ui</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Scrollable</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Tree View</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Toasts</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Rating</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot5">
+                                    <span>Dropzone</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot6">
+                                    <span>Tour</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot7">
+                                    <span>SweetAlert2</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot8">
+                                    <span>Animated Modal</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot9">
+                                    <span>Owl Carousal</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot10">
+                                    <span>Ribbons</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot11">
+                                    <span>Pagination</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot12">
+                                    <span>Breadcrumb</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot13">
+                                    <span>Range Slider</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot14">
+                                    <span>Image Cropper</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot15">
+                                    <span>Basic card</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot16">
+                                    <span>Creative Card</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot17">
+                                    <span>Draggable Card</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot18">
+                                    <span>Timeline</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="command"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Animation</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Animate</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Scroll Reveal</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>AOS Animation</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Tilt Animation</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot5">
+                                    <span>Wow Animation</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="life-buoy"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Icons</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Flag Icon</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Fontawesome Icon</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Ico Icon</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Themeify Icon</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot5">
+                                    <span>Feather Icon</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot6">
+                                    <span>Weather Icon</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="tablet"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Buttons</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Default Style</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Flat Style</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Edge Style</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Raised Style</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot5">
+                                    <span>Button Group</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="bar-chart"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Charts</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Echarts</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Apex Chart</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Google Chart</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Sparkline Chart</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot5">
+                                    <span>Flot Chart</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot6">
+                                    <span>Knob Chart</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot7">
+                                    <span>Morris Chart</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot8">
+                                    <span>Chartjs Chart</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot9">
+                                    <span>Chartlist Chart</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot10">
+                                    <span>Peity Chart</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-main-title">
+                            <h6>PAGES</h6>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="credit-card"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Landing Page</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="save"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Sample Page</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="play-circle"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Internationalization</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="globe"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Starter Kit</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="layers"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Others</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Error Page</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Authentication</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Coming Soon</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Email templates</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-main-title">
+                            <h6>MISCELLANEOUS</h6>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="image"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Gallery</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>EGallery Grid</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Gallery Grid Desc</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Masonry Gallery</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Masonry With Desc</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot5">
+                                    <span>Hover Effects</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="headphones"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Blog</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Blog Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Blog Single</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Add Post</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="alert-triangle"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>FAQ</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="codesandbox"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Job Search</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Cards View</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>List View</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot3">
+                                    <span>Job Details</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot4">
+                                    <span>Apply</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="sliders"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Learning</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Learning List</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Detailed Course</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="compass"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Maps</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Maps JS</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>Vector Maps</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-menu">
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="check-circle"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Editors</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown">
+                                <a href="javascript:void(0)" class="d-flex align-center dot1">
+                                    <span>Quill Editor</span>
+                                </a>
+                                <a href="javascript:void(0)" class="d-flex align-center dot2">
+                                    <span>ACE Code Editor</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="settings"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Knowledgebase</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-center">
+                                <i data-feather="share-2"></i>
+                                <span class="anchor-parent"><i data-feather="anchor" class="anchor"></i></span>
+                                <span>Support Ticket</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pages-wrapper-body">
+            <header>
+                <div class="header-main d-flex justify-between align-center">
+                    <div class="header-content">
+                        <div class="header-hand d-flex">
+                            <h4>Welcome Alex</h4>
+                            <img src="./images/hand.gif" alt="" />
+                        </div>
+                        <div class="header-text">
+                            <p>Here’s what’s happening with your store today.</p>
+                        </div>
+                    </div>
+
+                    <div class="header-form d-flex align-center">
+                        <div class="header-input">
+                            <form action="" method="post">
+                                <i data-feather="search" class="search-icon"></i>
+                                <input type="search" name="search" class="search-bar" placeholder="Search" />
+                            </form>
+                        </div>
+                        <div class="icon1">
+                            <a href="#"><i data-feather="star" class="star"></i></a>
+                            <div class="dropdown">
+                                <h6>Bookmark</h6>
+                                <div class="dropdown-ic">
+                                    <ul class="bookmarks-dropdown">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#" class="fus"><i data-feather="file-text"
+                                                            class="file"></i></a>
+                                                    <span>Forms</span>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a href="#" class="fus"><i data-feather="user"
+                                                            class="user2"></i></a>
+                                                    <span>Profile</span>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a href="#" class="fus"><i data-feather="server"
+                                                            class="server"></i></a>
+                                                    <span>Tables</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="bookmark">
+                                        <h5><a href="#">Add New Bookmark</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon2">
+                            <a href="#"><i data-feather="moon" class="moon"></i></a>
+                        </div>
+                        <div class="icon3">
+                            <a href="#"><i data-feather="bell" class="bell"></i></a>
+                            <span class="red-span">4</span>
+                            <div class="dropdown2">
+                                <div class="drop2-title d-flex justify-between">
+                                    <h4>Notifications</h4>
+                                    <span>4 New</span>
+                                </div>
+                                <div class="dropdown-ic">
+                                    <ul class="bookmarks-dropdown">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#" class="text1">All(3)</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a href="#" class="text2">Messages</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a href="#" class="text3">Cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="media d-flex justify-between">
+                                        <div class="media-img">
+                                            <img src="./images/media-img.jpg" alt="" />
+                                        </div>
+                                        <div class="media-text">
+                                            <a href="#">Men Blue T-Shirt</a>
+                                            <div class="media-btn">
+                                                <span>-</span>
+                                                <span>1</span>
+                                                <span>+</span>
+                                            </div>
+                                            <h6>$695.00</h6>
+                                        </div>
+                                        <div class="media-close">
+                                            <a href="#"><i data-feather="x" class="close"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media2 d-flex justify-between">
+                                        <div class="media2-img">
+                                            <img src="./images/media2.jpg" alt="" />
+                                        </div>
+                                        <div class="media2-text">
+                                            <a href="#">Floyd Miles</a>
+                                            <p>Sir,Can i remove part in des...</p>
+                                        </div>
+                                        <a href="#"><i data-feather="more-vertical" class="menu-vertical"></i></a>
+                                    </div>
+                                    <div class="media2 d-flex justify-between">
+                                        <div class="media2-img">
+                                            <img src="./images/media3.jpg" alt="" />
+                                        </div>
+                                        <div class="media2-text">
+                                            <a href="#" class="media3-a">Dianne Russell</a>
+                                            <p>So, what is my next work ?</p>
+                                        </div>
+                                        <a href="#"><i data-feather="more-vertical" class="menu-vertical"></i></a>
+                                    </div>
+                                    <div class="check-btn">
+                                        <a href="javascript:void(0)">Check all</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user d-flex align-center">
+                            <div class="user-img">
+                                <img src="./images/profile (1).png" alt="" />
+                            </div>
+                            <div class="user-text">
+                                <span>Alex Mora<i data-feather="chevron-down" class="chevron-down-icon"></i></span>
+                                <p>Admin</p>
+                                <div class="dropdown3">
+                                    <div class="dropdown-ic">
+                                        <ul class="bookmarks-dropdown">
+                                            <li>
+                                                <div class="row flex-col">
+                                                    <div class="col-12 d-flex align-center">
+                                                        <a href="#"><i data-feather="user" class="user3"></i></a>
+                                                        <span>My Profile</span>
+                                                    </div>
+                                                    <div class="col-12 d-flex align-center">
+                                                        <a href="#"><i data-feather="mail" class="mail"></i></a>
+                                                        <span>Inbox</span>
+                                                    </div>
+                                                    <div class="col-12 d-flex align-center">
+                                                        <a href="#"><i data-feather="settings"
+                                                                class="settings2"></i></a>
+                                                        <span>Settings</span>
+                                                    </div>
+                                                    <div class="drop-logout">
+                                                        <a href="#">Log Out</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="pages-body">
+                <div class="pages-body-title d-flex align-center justify-between">
+                    <h4>Contacts</h4>
+                    <div class="title-icon d-flex align-center">
+                        <a href="./index.html"><i data-feather="home"></i></a>
+                        <span>/ &nbsp; Apps</span>
+                        <span>/ &nbsp; Contacts</span>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="contact-card1">
+                                <div class="contact-profile d-flex justify-evenly align-center">
+                                    <img src="./images/contact-profile.png" alt="">
+                                    <div class="contact-profile-text">
+                                        <h6>MARK JENCO</h6>
+                                        <p>Markjecno@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-profile-btn">
+                                    <a href="javascript:void(0)" class="d-flex align-center">
+                                        <i data-feather="users"></i>
+                                        New Contacts
+                                    </a>
+                                </div>
+                                <div class="contact-title">
+                                    <span>Views</span>
+                                </div>
+                                <div class="contact-links">
+                                    <a href="#">
+                                        <span>Personal</span>
+                                    </a>
+                                    <li>
+                                        <span>+ Add Category</span>
+                                    </li>
+                                    <a href="#">
+                                        <span>Organization</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>Follow Up</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>Favourites</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>Ideas</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>Important</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>Business</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>Holidays</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="contact-personal contact-card1">
+                                <div class="personal-title d-flex justify-between align-center">
+                                    <h5>Personal</h5>
+                                    <span>5 Contacts</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="personal-media d-flex align-center">
+                                            <img src="./images/per1.png" alt="">
+                                            <div class="personal-media-text">
+                                                <span>Bucky Barnes</span>
+                                                <p><a href="#">barnes@gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="personal-media d-flex align-center">
+                                            <img src="./images/per2.jpg" alt="">
+                                            <div class="personal-media-text">
+                                                <span>Bucky Barnes</span>
+                                                <p><a href="#">barnes@gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="personal-media d-flex align-center">
+                                            <img src="./images/per3.jpg" alt="">
+                                            <div class="personal-media-text">
+                                                <span>Bucky Barnes</span>
+                                                <p><a href="#">barnes@gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="personal-media d-flex align-center">
+                                            <img src="./images/per4.png" alt="">
+                                            <div class="personal-media-text">
+                                                <span>Bucky Barnes</span>
+                                                <p><a href="#">barnes@gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="personal-media d-flex align-center">
+                                            <img src="./images/per5.jpg" alt="">
+                                            <div class="personal-media-text">
+                                                <span>Bucky Barnes</span>
+                                                <p><a href="#">barnes@gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="personal-media d-flex align-center">
+                                            <img src="./images/per6.jpg" alt="">
+                                            <div class="personal-media-text">
+                                                <span>Bucky Barnes</span>
+                                                <p><a href="#">barnes@gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="personal-media d-flex align-center">
+                                            <img src="./images/per7.jpg" alt="">
+                                            <div class="personal-media-text">
+                                                <span>Bucky Barnes</span>
+                                                <p><a href="#">barnes@gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="personal-media personal-media2 d-flex align-center">
+                                            <img src="./images/per1.png" alt="">
+                                            <div class="personal-media-text">
+                                                <span>Bucky Barnes</span>
+                                                <p><a href="#">barnes@gmail.com</a></p>
+                                                <ul class="d-flex">
+                                                    <li><a href="#" class="pipe">Edit</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                    <li><a href="#">History</a></li>
+                                                    <li><a href="#">Print</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="personal-media-info">
+                                            <h6>General</h6>
+                                            <ul>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>Name</span>
+                                                    <span class="media-green">Bucky</span>
+                                                </li>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>Gender</span>
+                                                    <span class="media-green">Male</span>
+                                                </li>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>Birthday</span>
+                                                    <span>18 May 1994</span>
+                                                </li>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>Personality</span>
+                                                    <span class="media-green">Cool</span>
+                                                </li>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>City</span>
+                                                    <span class="media-green">Moline acres</span>
+                                                </li>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>Mobile No</span>
+                                                    <span class="media-green">+0 1800 76855</span>
+                                                </li>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>Email Address</span>
+                                                    <span class="media-green">Bucky</span>
+                                                </li>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>Website</span>
+                                                    <span class="media-green">www.test.com</span>
+                                                </li>
+                                                <li class="d-flex justify-between align-center">
+                                                    <span>Interest</span>
+                                                    <span class="media-green">Photography</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-contact">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Copyright 2024 © Riho theme by pixelstrap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-btn">
+            <a href="#"><i data-feather="chevrons-up"></i></a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="./js/chart.js"></script>
+        <script src="./js/code.js"></script>
+        <script src="./js/jquery-jvectormap-1.1.1.min.js"></script>
+        <script src="./js/jquery-jvectormap-world-mill.js"></script>
+        <script>
+            $(".sidebar-menu > a").click(function () {
+                $(".sidebar-dropdown").slideUp(400);
+                if ($(this).parent().hasClass("active")) {
+                    $(".sidebar-menu").removeClass("active");
+                    $(this).parent().removeClass("active");
+                } else {
+                    $(".sidebar-menu").removeClass("active");
+                    $(this).next(".sidebar-dropdown").slideDown(400);
+                    $(this).parent().addClass("active");
+                }
+            });
+
+            $(".grid-icon").click(function () {
+                $(".side-bar").toggleClass("close-sidebar");
+                $(".pages-wrapper-body").toggleClass("increase-pwb");
+                $(".pages-wrapper-body header").toggleClass("increase-header");
+            });
+        </script>
+        <script>
+            $(window).on('load', function () {
+                $(".loader").delay(1500).fadeOut(500);
+                $(".body-loader").delay(2000).fadeOut(600);
+                setInterval(function () {
+                    $("body").removeClass("loading");
+                }, 1500);
+            });
+        </script>
+        <script>
+            feather.replace();
+        </script>
+</body>
+
+</html>
